@@ -13,20 +13,19 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("left"))
+        if (Input.GetKey("left"))
         {
             transform.position -= new Vector3(carSpeed * Time.deltaTime, 0, 0);
         }
-        if (Input.GetKeyDown("right"))
+        else if (Input.GetKey("right"))
         {
             transform.position += new Vector3(carSpeed * Time.deltaTime, 0, 0);
         }
-        if (Input.GetKeyDown("up"))
+        else if (Input.GetKey("up"))
         {
             transform.position += new Vector3(0, carSpeed * Time.deltaTime, 0);
         }
-        if (Input.GetKeyDown("down"))
-        {
+        else if (Input.GetKey("down")) {
             transform.position -= new Vector3(0, carSpeed * Time.deltaTime, 0);
         }
     }
