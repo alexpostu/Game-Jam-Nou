@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\PlayerFollower2.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
      <None Include="Assets\read me.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
